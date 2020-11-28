@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "studentcrudweb"
+  "defaultProject": "studentcrudweb",
+  "cli": {
+    "analytics": "07731a83-234c-4bc9-a1a8-2e3b0f5e0a30"
+  }
 }

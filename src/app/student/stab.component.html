@@ -1,0 +1,27 @@
+<div>
+
+  <table border="2">
+    <tr>
+      <th>Student Id</th>
+      <th>Student Name</th>
+      <th>Student Marks</th>
+
+    </tr>
+    <tr *ngFor="let s of sarr">
+      <td>{{s.sid}}</td>
+      <td>{{s.sname}}</td>
+      <td>{{s.smarks}}</td>
+
+      <td> <a (click)="deleteStudent(s)"> Delete</a> /
+        <a (click)="updateStudent(s)"> Edit</a></td>
+    </tr>
+
+  </table>
+  <button type="button" name="btn" (click)="displayForm()">Add Student</button>
+
+  <div *ngIf="flag">
+    
+    <sform [upob]="sob" (myevent)="sarr=$event" (myevent1)="flag=$event"></sform>
+
+  </div>
+</div>
